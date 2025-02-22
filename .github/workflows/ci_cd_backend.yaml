@@ -19,4 +19,5 @@ jobs:
           context: .
           file: ./Docker/Dockerfile.backend
           push: true
-          tags: rajulthakur/todo-app: ${{github.sha}}
+          tags: rajulthakur/todo-app:${{ github.sha }}
+      ## Step to deploy
