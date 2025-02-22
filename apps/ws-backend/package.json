@@ -1,0 +1,22 @@
+{
+  "name": "ws-backend",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/ws": "^8.5.14"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "bun ./dist/index.js",
+    "dev": "bun run build && bun run start "
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@repo/db": "*",
+    "ws": "^8.18.1"
+  }
+}
